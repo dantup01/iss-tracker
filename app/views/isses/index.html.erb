@@ -1,10 +1,38 @@
 
 <div class="container">
-  <h1>Where is the ISS?</h1>
-  <div id="map"
+  <h1>ISS Tracker</h1>
+
+  <!-- our Map goes here -->
+  <div id="map-div"
        style="width: 100%; height: 600px;"
        data-markers="<%= @markers.to_json %>"
-       data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+       data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+  </div>
+
+  <div id="details">
+    <div>
+      Time:
+      <span class="time"></span>
+    </div>
+     <div>
+      Latitude:
+      <span class="latitude"></span>
+    </div>
+     <div>
+      Longitude:
+      <span class="longitude"></span>
+    </div>
+     <div>
+      Speed:
+      <span class="speed"></span>
+    </div>
+     <div>
+      Altitude:
+      <span class="altitude"></span>
+    </div>
+     <div>
+      Visibility:
+      <span class="visibility"></span>
+    </div>
+  </div>
 </div>
-
-
