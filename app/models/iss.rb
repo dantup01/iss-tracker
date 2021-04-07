@@ -1,0 +1,2 @@
+class Iss < ApplicationRecord
+end
